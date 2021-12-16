@@ -8,7 +8,8 @@ import { PageAccueilComponent } from './pages/page-accueil/page-accueil.componen
 import { PageDetailsComponent } from './pages/page-details/page-details.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { FilterSideBarComponent } from './component/filter-side-bar/filter-side-bar.component';
-
+import { CardPlantComponent } from './component/card-plant/card-plant.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,13 @@ import { FilterSideBarComponent } from './component/filter-side-bar/filter-side-
          PageAccueilComponent,
          PageDetailsComponent,
          PageNotFoundComponent,
-         FilterSideBarComponent
+         FilterSideBarComponent,
+         CardPlantComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
